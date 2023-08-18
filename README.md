@@ -1,4 +1,4 @@
-# Quiz App
+# Trivia App
 
 Built using React and Bootstrap.
 
