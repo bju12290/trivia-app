@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Navbar from '../components/Navbar'
 import Start from '../components/Start'
 import Quiz from '../components/Quiz'
+import FinalScore from '../components/FinalScore'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<Start />} />
                     <Route path="/quiz" element={<Quiz />} />
+                    <Route path="/finalscore" element={<FinalScore />} />
                 </Routes>
             </div>
         </Router>

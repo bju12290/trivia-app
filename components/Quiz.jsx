@@ -7,18 +7,9 @@ import Question from './Question'
 
 export default function Quiz() {
 
-    const [triviaData, setTriviaData] = React.useState([])
-
-    React.useEffect(() => {
-        fetch("https://opentdb.com/api.php?amount=5&type=multiple")
-            .then(res => res.json())
-            .then(data => setTriviaData(data))
-    })
-
     return (
         <div className="question-container d-flex flex-column align-items-center justify-content-between">
             <Question />
-            <button className="submit-button btn btn-light" type="submit">Submit Answer</button>
         </div>
     )
 }

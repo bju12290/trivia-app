@@ -51,12 +51,14 @@ a {
 }
 
 .answers {
-    margin-top: 2vh;
+    margin-top: 5vh;
     margin-bottom: 10vh;
 }
 
 .submit-button {
-    margin-bottom: 4vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    min-width: 150px;
 }
 /* Large screens only:
 
