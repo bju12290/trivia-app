@@ -22,9 +22,9 @@ export default function Question() {
             
             </div>
             <div className="answers form-check">
-            <Answers triviaData={triviaData} questionNum={questionNum} setQuestionNum={setQuestionNum}/>
+            <Answers triviaData={triviaData} questionNum={questionNum}/>
                     <div className="text-center">
-                        <SubmitButton questionNum={questionNum} setQuestionNum={setQuestionNum}/>
+                        <SubmitButton triviaData={triviaData} questionNum={questionNum} setQuestionNum={setQuestionNum}/>
                     </div>
             </div>
         </>
