@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
+export let totalCorrect = 0
+let submittedAnswer = ""
 
 export default function SubmitButton(props) {
     const questionNum = props.questionNum
@@ -23,6 +24,9 @@ export default function SubmitButton(props) {
     function handleNextQuestion() {
         if (questionNum < 4) {
             props.setQuestionNum(prevNum => prevNum + 1)
+        }
+        if (submittedAnswer === triviaData[questionNum].correct_answer) {
+            totalCorrect = totalCorrect + 1
         } 
         
         setSubmitStatus(false)
@@ -57,6 +61,4 @@ export default function SubmitButton(props) {
             </button>
     }
 }
-
-
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { nanoid } from 'nanoid'
 
 export default function Answers(props) {
     const triviaData = props.triviaData
@@ -30,7 +31,8 @@ export default function Answers(props) {
                     value={answer}
                     className="form-check-input"
                     type="radio"
-                    id={index}>
+                    id={index}
+                    disabled={submitStatus}>
                 </input>
                 <label 
                     className="form-check-label"
