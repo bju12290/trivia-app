@@ -4,7 +4,8 @@ import SubmitButton from './SubmitButton'
 import Answers from './Answers'
 
 export default function Question() {
-
+    
+    const [submitStatus, setSubmitStatus] = React.useState(false)
     const [triviaData, setTriviaData] = React.useState(null)
     const [questionNum, setQuestionNum] = React.useState(0)
 
@@ -22,9 +23,9 @@ export default function Question() {
             
             </div>
             <div className="answers form-check">
-            <Answers triviaData={triviaData} questionNum={questionNum} setQuestionNum={setQuestionNum}/>
+            <Answers submitStatus={submitStatus} triviaData={triviaData} questionNum={questionNum}/>
                     <div className="text-center">
-                        <SubmitButton questionNum={questionNum} setQuestionNum={setQuestionNum}/>
+                        <SubmitButton setSubmitStatus={setSubmitStatus} submitStatus={submitStatus} triviaData={triviaData} questionNum={questionNum} setQuestionNum={setQuestionNum}/>
                     </div>
             </div>
         </>

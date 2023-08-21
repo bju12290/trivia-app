@@ -1,10 +1,12 @@
 import React from 'react'
+import { nanoid } from 'nanoid'
 
 export default function Answers(props) {
     const triviaData = props.triviaData
     const correctAnswer = triviaData[props.questionNum].correct_answer
     const incorrectAnswers = triviaData[props.questionNum].incorrect_answers
     const answersArray = [...incorrectAnswers, correctAnswer]
+    const submitStatus = props.submitStatus
 
 
     function shuffle(array) {
@@ -25,9 +27,12 @@ export default function Answers(props) {
         const answersElements = answersArray.map((answer, index) => {
             return (<div key={index}>
                 <input
+                    name="answer"
+                    value={answer}
                     className="form-check-input"
-                    type="checkbox"
-                    id={index}>
+                    type="radio"
+                    id={index}
+                    disabled={submitStatus}>
                 </input>
                 <label 
                     className="form-check-label"
@@ -45,48 +50,3 @@ export default function Answers(props) {
         </>
     )
 }
-
-
-
-
-    //     <>
-    // <input 
-    //     className="form-check-input" 
-    //     type="checkbox" 
-    //     id="answer-1">
-    // </input>
-    // {triviaData === null ? 
-    //     (<></>) : 
-    //     (<label 
-    //         className="form-check-label" 
-    //         htmlFor="answer-1">test</label>)}
-    //         <br/>
-    // <input 
-    //     className="form-check-input" 
-    //     type="checkbox" 
-    //     id="answer-2">
-    // </input>
-    //     <label 
-    //     className="form-check-label" 
-    //     htmlFor="answer-2"> I have a bikeasfasfasfasasfasfasff</label>
-    //     <br/>
-    // <input 
-    //     className="form-check-input" 
-    //     type="checkbox" 
-    //     id="answer-3">
-    // </input>
-    //         <label 
-    //         className="form-check-label" 
-    //         htmlFor="answer-3"> I have a bike</label>
-    //         <br/>
-
-    // <input 
-    //     className="form-check-input" 
-    //     type="checkbox" 
-    //     id="answer-4">
-    // </input>
-    //         <label 
-    //         className="form-check-label" 
-    //         htmlFor="answer-4"> I have a bike</label>
-    //         <br/>
-    //         </>
