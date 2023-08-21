@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 
 export default function SubmitButton(props) {
-    const questionNum = props.num
+    const questionNum = props.questionNum
 
     const [submitStatus, setSubmitStatus] = React.useState(false)
 
