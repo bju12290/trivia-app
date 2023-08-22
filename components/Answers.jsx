@@ -2,26 +2,8 @@ import React from 'react'
 import { nanoid } from 'nanoid'
 
 export default function Answers(props) {
-    const triviaData = props.triviaData
-    const correctAnswer = triviaData[props.questionNum].correct_answer
-    const incorrectAnswers = triviaData[props.questionNum].incorrect_answers
-    const answersArray = [...incorrectAnswers, correctAnswer]
+    const answersArray = props.answersArray
     const submitStatus = props.submitStatus
-
-
-    function shuffle(array) {
-        let currentIndex = array.length,  randomIndex;
-        while (currentIndex != 0) {
-          randomIndex = Math.floor(Math.random() * currentIndex);
-          currentIndex--;
-          [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
-        }
-        return array;
-    }
-
-
-    shuffle(answersArray)
-    console.log(answersArray)
 
     const AnswersElements = () => {
         const answersElements = answersArray.map((answer, index) => {

@@ -22,12 +22,12 @@ export default function SubmitButton(props) {
     }
 
     function handleNextQuestion() {
-        if (questionNum < 4) {
-            props.setQuestionNum(prevNum => prevNum + 1)
-        }
         if (submittedAnswer === triviaData[questionNum].correct_answer) {
             totalCorrect = totalCorrect + 1
         } 
+        if (questionNum < 4) {
+            props.setQuestionNum(prevNum => prevNum + 1)
+        }
         
         setSubmitStatus(false)
     }
@@ -49,7 +49,8 @@ export default function SubmitButton(props) {
     } else if (submitStatus === true && questionNum === 4) {
         return <Link to="/finalscore"><button 
                 className="submit-button btn btn-light" 
-                type="button">
+                type="button"
+                onClick={handleNextQuestion} >
                 Get Score
             </button></Link>
     } else {
