@@ -1,5 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
+import '../src/styles.css'
 import Navbar from '../components/Navbar'
 import Start from '../components/Start'
 import Quiz from '../components/Quiz'

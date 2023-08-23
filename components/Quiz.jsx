@@ -4,7 +4,7 @@ import Question from './Question'
 export default function Quiz() {
 
     return (
-        <div className="question-container d-flex flex-column align-items-center justify-content-between">
+        <div className="question--container d-flex flex-column align-items-center justify-content-between">
             <Question />
         </div>
     )

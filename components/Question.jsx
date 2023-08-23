@@ -55,7 +55,7 @@ export default function Question() {
             <h4>{triviaData[questionNum].question}</h4>
             
             </div>
-            <div className="answers-container form-check">
+            <div className="answers--container form-check">
             <Answers selectedAnswer={selectedAnswer} answersArray={answersArray} submitStatus={submitStatus} triviaData={triviaData} questionNum={questionNum}/>
             </div>
             <div className="submit--container">

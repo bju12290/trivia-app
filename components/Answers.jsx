@@ -1,6 +1,5 @@
 import React from 'react'
 import '../src/styles.css'
-import { Link } from 'react-router-dom'
 
 export default function Answers(props) {
     const answersArray = props.answersArray
@@ -36,7 +35,7 @@ export default function Answers(props) {
                     defaultChecked={selectedAnswer === answer}>
                 </input>
                 <label 
-                    className={`answer-label form-check-label ${labelClass}`}
+                    className={`${labelClass} answer--label form-check-label `}
                     htmlFor={index}>{answer}
                 </label>
                 <br/>
