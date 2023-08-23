@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 export default function Start() {
+
     return (
         <>
         <div className="start d-flex flex-column align-items-center justify-content-center">
@@ -10,7 +11,7 @@ export default function Start() {
         </div>
         <div className="container d-flex justify-content-center">
             <Link to="/quiz">
-                <button type="button" className="btn btn-light">Start Quiz</button>
+                <button type="button" className="start--button btn btn-light">Start Quiz</button>
             </Link>
         </div>
         </>

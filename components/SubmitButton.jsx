@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom'
 export let totalCorrect = 0
 let submittedAnswer = ""
 
+export function resetTotalCorrect() {
+    totalCorrect = 0;
+    console.log(totalCorrect)
+}
+
 export default function SubmitButton(props) {
     const questionNum = props.questionNum
     const triviaData = props.triviaData
@@ -17,6 +22,7 @@ export default function SubmitButton(props) {
         for (let i = 0; i < answers.length; i++) {
             if (answers[i].checked) {
                 submittedAnswer = answers[i].value
+                props.setSelectedAnswer(submittedAnswer)
             }
             }
     }
@@ -28,9 +34,10 @@ export default function SubmitButton(props) {
         if (questionNum < 4) {
             props.setQuestionNum(prevNum => prevNum + 1)
         }
-        
         setSubmitStatus(false)
     }
+
+
 
     if (submitStatus === false && questionNum < 5) {
         return <button 
