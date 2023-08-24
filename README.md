@@ -24,7 +24,7 @@ If you want to restart, at any time you can click the logo in the Navigation Bar
  ## Contact Information
 
  ## Known Issues
- - Manually refreshing the application won't cause your score to be reset. I plan to address this.
+
 
  ## Project Goals
 
