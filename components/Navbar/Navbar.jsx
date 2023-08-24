@@ -1,9 +1,9 @@
 import React from 'react'
-import logo from '../src/assets/images/icon.png'
-import ModeToggle from './ModeToggle'
-import '../src/styles.css'
+import logo from '../../src/assets/images/icon.png'
+import ModeToggle from '../ModeToggle/ModeToggle.jsx'
+import './Navbar.css'
 import { Link } from 'react-router-dom'
-import { resetTotalCorrect } from './SubmitButton'
+import { resetTotalCorrect } from '../SubmitButton/SubmitButton'
 
 export default function Navbar() {
 

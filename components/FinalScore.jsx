@@ -1,6 +1,5 @@
 import React from 'react'
-import '../src/styles.css'
-import { totalCorrect, resetTotalCorrect } from './SubmitButton'
+import { totalCorrect, resetTotalCorrect } from './SubmitButton/SubmitButton'
 import { Link } from 'react-router-dom'
 import { useWindowSize } from '@reactuses/core'
 import Confetti from 'react-confetti'

@@ -1,0 +1,23 @@
+/* -=NAVBAR=- */
+
+.navbar {
+    background-color: var(--container-color);
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    color: var(--text-color) !important; /* OVERRIDING BOOTSTRAP DEFAULT STYLING HERE */
+}
+
+.navbar--logo {
+    padding: 5px;
+    font-weight: 500;
+}
+
+.navbar--icon {
+    width: 16px;
+    height: auto;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 10px;
+}

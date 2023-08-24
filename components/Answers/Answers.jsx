@@ -1,5 +1,5 @@
 import React from 'react'
-import '../src/styles.css'
+import './Answers.css'
 
 export default function Answers(props) {
     const answersArray = props.answersArray
@@ -11,19 +11,19 @@ export default function Answers(props) {
     function getClass(answer) {
         if (submitStatus) {
             if (answer === triviaData[questionNum].correct_answer) {
-                return 'correct-styling';
+                return 'correct-styling'
             } else if (answer === selectedAnswer) {
-                return 'incorrect-styling';
+                return 'incorrect-styling'
             }
         }
-        return '';
+        return ''
     }
 
     const submitStyle = getClass()
 
     const AnswersElements = () => {
         const answersElements = answersArray.map((answer, index) => {
-            const labelClass = getClass(answer);
+            const labelClass = getClass(answer)
             return (<div key={index}>
                 <input
                     name="answer"

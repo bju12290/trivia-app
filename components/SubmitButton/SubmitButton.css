@@ -1,0 +1,25 @@
+/* -Submit Button- */
+.submit--container {
+    margin: auto;
+}
+
+.submit--button {
+    margin-bottom: 5vh;
+    min-width: 150px;
+    background-color: var(--button-color);
+}
+
+@keyframes flash {
+    0%, 100% {
+      background-color: inherit;
+      color: inherit;
+    }
+    50% {
+      background-color: rgba(231, 29, 54, 1);
+      color: var(--text-color);
+    }
+  }
+  
+  .flash {
+    animation: flash 0.5s ease;
+  }

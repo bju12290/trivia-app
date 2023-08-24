@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './SubmitButton.css'
 
 export let totalCorrect = 0
 let submittedAnswer = ""
@@ -14,6 +15,7 @@ export default function SubmitButton(props) {
     const submitStatus = props.submitStatus
     const setSubmitStatus = props.setSubmitStatus
 
+
     function handleSubmit() {
         const answers = document.getElementsByName('answer');
         let isAnyCheckboxSelected = false;
@@ -23,7 +25,7 @@ export default function SubmitButton(props) {
             isAnyCheckboxSelected = true;
             submittedAnswer = answers[i].value;
             props.setSelectedAnswer(submittedAnswer);
-            break; // Exit the loop since a checkbox is selected
+            break; 
           }
         }
       
@@ -35,12 +37,13 @@ export default function SubmitButton(props) {
       
             setTimeout(() => {
               flashButton.classList.remove('flash');
-            }, 500); // Adjust the duration to match your animation duration
+            }, 500); 
           }
         } else {
           setSubmitStatus(true);
         }
     }
+
 
     function handleNextQuestion() {
         if (submittedAnswer === triviaData[questionNum].correct_answer) {
@@ -61,6 +64,7 @@ export default function SubmitButton(props) {
                 type="button">
                 Submit Answer
             </button>
+
     } else if (submitStatus === true && questionNum < 4) {
         return <button 
             onClick={handleNextQuestion} 
@@ -68,6 +72,7 @@ export default function SubmitButton(props) {
                 type="button">
                 Next Question
             </button>
+
     } else if (submitStatus === true && questionNum === 4) {
         return <Link to="/finalscore"><button 
                 className="submit--button btn btn-light" 
@@ -75,6 +80,7 @@ export default function SubmitButton(props) {
                 onClick={handleNextQuestion} >
                 Get Score
             </button></Link>
+            
     } else {
         <button 
                 onClick={handleSubmit} 

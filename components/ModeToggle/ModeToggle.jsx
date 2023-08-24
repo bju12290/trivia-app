@@ -1,21 +1,21 @@
 import React from 'react'
-import '../src/styles.css'
+import './ModeToggle.css'
 
 export default function ModeToggle() {
-    const [darkMode, setDarkMode] = React.useState(false);
+    const [darkMode, setDarkMode] = React.useState(false)
   
     React.useEffect(() => {
-      const body = document.body;
+      const body = document.body
       if (darkMode) {
-        body.classList.add('dark-mode');
+        body.classList.add('dark-mode')
       } else {
-        body.classList.remove('dark-mode');
+        body.classList.remove('dark-mode')
       }
-    }, [darkMode]);
+    }, [darkMode])
   
     const toggleMode = () => {
-      setDarkMode(prevMode => !prevMode);
-    };
+      setDarkMode(prevMode => !prevMode)
+    }
   
     return (
       <div className="mode-toggle">
@@ -24,5 +24,5 @@ export default function ModeToggle() {
         <span className="slider round"></span>
         </label>
       </div>
-    );
+    )
   }

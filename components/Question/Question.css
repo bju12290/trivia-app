@@ -1,0 +1,17 @@
+/* -Question- */
+.question--container {
+    background-color: var(--container-color);
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15vh;
+    border-radius: 25px;
+    box-shadow: 0px 5px 5px var(--box-shadow-color);
+    display: inline-block;
+}
+
+.question {
+    width: 75%;
+    margin-top: 8vh;
+    text-align: center;
+}

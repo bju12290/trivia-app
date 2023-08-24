@@ -1,7 +1,7 @@
 import React from 'react'
-import '../src/styles.css'
-import SubmitButton from './SubmitButton'
-import Answers from './Answers'
+import './Question.css'
+import SubmitButton from '../SubmitButton/SubmitButton.jsx'
+import Answers from '../Answers/Answers.jsx'
 import he from 'he'
 
 export default function Question() {
@@ -12,7 +12,6 @@ export default function Question() {
     const [answersArray, setAnswersArray] = React.useState([]);
     const [selectedAnswer, setSelectedAnswer] = React.useState(null)
 
-    console.log(selectedAnswer)
     React.useEffect(() => {
         fetch("https://opentdb.com/api.php?amount=5&type=multiple")
             .then(res => res.json())
@@ -23,18 +22,18 @@ export default function Question() {
                     incorrect_answers: result.incorrect_answers.map(incorrectAnswer => he.decode(incorrectAnswer)),
                     correct_answer: he.decode(result.correct_answer)
                 }))
-                setTriviaData(decodedData);
+                setTriviaData(decodedData)
             })
     }, [])
 
     function shuffle(array) {
         let currentIndex = array.length,  randomIndex;
         while (currentIndex != 0) {
-          randomIndex = Math.floor(Math.random() * currentIndex);
-          currentIndex--;
-          [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+          randomIndex = Math.floor(Math.random() * currentIndex)
+          currentIndex--
+          [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]]
         }
-        return array;
+        return array
     }
 
     React.useEffect(() => {
@@ -44,7 +43,7 @@ export default function Question() {
             const newAnswersArray = [...incorrectAnswers, correctAnswer]
             shuffle(newAnswersArray)
             setAnswersArray(newAnswersArray)
-            console.log(correctAnswer)
+            // console.log(correctAnswer) - Uncomment to cheat ;)
         }
     }, [questionNum, triviaData]);
 
