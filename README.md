@@ -34,7 +34,7 @@ If you want to restart, at any time you can click the logo in the Navigation Bar
 
 ## Additional Challenges
 
-- Light Mode/Dark Mode Toggle
+- Light Mode/Dark Mode Toggle :white_check_mark:
 - Spanish/English Language Toggle
 - Store score history in browser's local storage, display it back to the user on a seperate optionally accessible page.
 
