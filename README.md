@@ -20,23 +20,32 @@ If you want to restart, at any time you can click the logo in the Navigation Bar
  - [he](https://www.npmjs.com/package/he): A JavaScript library for HTML entity encoding and decoding.
 
  ## Project Structure
+- **'components/'**: This directory serves as a container for both reusable components and the major page designs that are used throughout the application. Each subfolder within the **'components/'** directory corresponds to a unique component, containing the component's JavaScript file and its associated styling. Notably, the **Start**, **Quiz**, and **FinalScore** components are higher-level components that function as pages within the application.
+- **'src/'**: At the heart of the application, the **'src/'** directory houses various project assets, the **index.jsx** file for routing and high-level structure definition, and the **styles.css** file for application-wide styling.
+    - **'assets/'**: This directory is dedicated to storing the project's assets, such as images, icons, and other media resources.
+    - **'index.jsx'**: Within this file, the routing and overall structure of the application are defined. Additionally, this is where the rendering of the application into the DOM occurs.
+    - **'styles.css'**: The **'styles.css'** file plays a dual role in the application. It is responsible for managing application-wide styling, ensuring a cohesive look and feel. It also extends its reach to style the major page designs, (Start, Quiz, and FinalScore) contributing to a consistent user experience. 
 
- ## Contact Information
+ #### Contact Information
 
- ## Known Issues
+Feel free to contact via email! 
 
+```brian.phartnettjr@gmail.com```
+ #### Known Issues
+ 
+ - No known issues at this time. If you find one let me know! :)
 
- ## Project Goals
+ #### Project Goals
 
-- Two screens (start & question)
-- Pull 5 Questions from the OTDB API
-- Tally correct answers after "Check answers" is clicked
+- Two screens (start & question):white_check_mark:
+- Pull 5 Questions from the OTDB API:white_check_mark:
+- Tally correct answers after "Check answers" is clicked:white_check_mark:
 
-## Additional Challenges
+#### Additional Challenges
 
 - Light Mode/Dark Mode Toggle :white_check_mark:
-- Spanish/English Language Toggle
-- Store score history in browser's local storage, display it back to the user on a seperate optionally accessible page.
+
+
 
  
 
