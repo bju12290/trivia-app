@@ -13,7 +13,7 @@ function App() {
         <div>
             <Navbar />
             <Routes>
-                <Route path="/" element={<Start />} />
+                <Route exact path="/" element={<Start />} />
                 <Route path="/quiz" element={<Quiz />} />
                 <Route path="/finalscore" element={<FinalScore />} />
             </Routes>
@@ -22,7 +22,7 @@ function App() {
 }
 
 ReactDOM.render(
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
         <App />
     </Router>,
     document.getElementById("root")
