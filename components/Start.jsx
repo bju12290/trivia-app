@@ -10,7 +10,7 @@ export default function Start() {
             <p className="text-center start--description">This application pulls questions from the <a className="link" target="_blank" href="https://opentdb.com/api_config.php">OTDB API</a> and displays 5 random questions on screen for you to answer. After answering, your score will be tallied and displayed to you on screen.</p>
         </div>
         <div className="container d-flex justify-content-center">
-            <Link to="/quiz">
+            <Link to="/trivia-app/quiz">
                 <button type="button" className="start--button btn btn-light">Start Quiz</button>
             </Link>
         </div>

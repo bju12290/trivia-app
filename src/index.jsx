@@ -14,8 +14,8 @@ function App() {
             <Navbar />
             <Routes>
                 <Route exact path="/trivia-app" element={<Start />} />
-                <Route path="/quiz" element={<Quiz />} />
-                <Route path="/finalscore" element={<FinalScore />} />
+                <Route path="/trivia-app/quiz" element={<Quiz />} />
+                <Route path="/trivia-app/finalscore" element={<FinalScore />} />
             </Routes>
         </div>
     )
