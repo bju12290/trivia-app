@@ -13,7 +13,7 @@ function App() {
         <div>
             <Navbar />
             <Routes>
-                <Route exact path="/" element={<Start />} />
+                <Route exact path="/trivia-app" element={<Start />} />
                 <Route path="/quiz" element={<Quiz />} />
                 <Route path="/finalscore" element={<FinalScore />} />
             </Routes>

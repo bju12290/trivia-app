@@ -14,7 +14,7 @@ export default function Navbar() {
     return (
         <div className="navbar navbar-expand-lg navbar-dark">
             <div onClick={resetScore} className="navbar--logo">
-            <Link className="navbar-brand" to="/">
+            <Link className="navbar-brand" to="/trivia-app">
                     <img className="navbar--icon" src={logo}></img>
                 Trivia App</Link>
             </div>
