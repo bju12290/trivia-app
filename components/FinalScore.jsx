@@ -14,7 +14,7 @@ export default function FinalScore() {
     if (totalCorrect < 1) {
         return (
             <div className="final-score-container d-flex flex-column align-items-center justify-content-between">
-                <h1>Better Luck Next Time!</h1>
+                <h1 className="final-score-header">Better Luck Next Time!</h1>
                 <p>You got { totalCorrect } right!</p>
                 <Link to="/trivia-app/quiz">
                 <button onClick={resetScore} className="submit-button btn btn-light">Play Again</button></Link>
@@ -27,7 +27,7 @@ export default function FinalScore() {
                     width={width}
                     height={height}
                     />
-                <h1>Perfect Score!</h1>
+                <h1 className="final-score-header">Perfect Score!</h1>
                 <p>You got { totalCorrect } right!</p>
                 <Link to="/trivia-app/quiz">
                 <button onClick={resetScore} className="submit-button btn btn-light">Play Again</button></Link>
@@ -36,7 +36,7 @@ export default function FinalScore() {
     } else if (totalCorrect < 3) {
         return (
             <div className="final-score-container d-flex flex-column align-items-center justify-content-between">
-                <h1>Not Bad!</h1>
+                <h1 className="final-score-header">Not Bad!</h1>
                 <p>You got { totalCorrect } right!</p>
                 <Link to="/trivia-app/quiz">
                 <button onClick={resetScore} className="submit-button btn btn-light">Play Again</button></Link>
@@ -49,7 +49,7 @@ export default function FinalScore() {
                 width={width}
                 height={height}
                 />
-            <h1>Congratulations!</h1>
+            <h1 className="final-score-header">Congratulations!</h1>
             <p>You got { totalCorrect } right!</p>
             <Link to="/trivia-app/quiz">
             <button onClick={resetScore} className="final-score-button btn btn-light">Play Again</button></Link>
