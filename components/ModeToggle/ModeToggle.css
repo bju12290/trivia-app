@@ -1,4 +1,7 @@
 /* -=MODETOGGLE SWITCH=- */
+.mode-toggle {
+  margin-right: 10px;
+}
 
 .switch {
     position: relative;
