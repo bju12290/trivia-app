@@ -74,7 +74,7 @@ export default function SubmitButton(props) {
             </button>
 
     } else if (submitStatus === true && questionNum === 4) {
-        return <Link to="/finalscore"><button 
+        return <Link to="/trivia-app/finalscore"><button 
                 className="submit--button btn btn-light" 
                 type="button"
                 onClick={handleNextQuestion} >
