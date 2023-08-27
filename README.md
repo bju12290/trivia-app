@@ -13,19 +13,19 @@ If you want to restart, at any time you can click the logo in the Navigation Bar
 ## Visuals
 
 #### Dark Mode/Light Mode Toggle
-![DarkMode/LightMode Toggle](https://imgur.com/hEDudVE)
+![DarkMode/LightMode Toggle](https://imgur.com/hEDudVE.gif)
 #### A Typical Playthrough
-![Playthrough](https://imgur.com/bCLGbGs)
+![Playthrough](https://imgur.com/bCLGbGs.gif)
 #### Possible Final Score Screens
 
 ##### Score of 0
-![Better Luck Next Time FinalScore Screen](url_to_your_gif.gif)
+![Better Luck Next Time FinalScore Screen](https://imgur.com/8PvFsV4.png)
 ##### Score of less than 3
-![Not Bad FinalScore Screen](https://imgur.com/wY0MVOk)
+![Not Bad FinalScore Screen](https://imgur.com/wY0MVOk.png)
 ##### Score of 3 or more
-![Congratulations FinalScore Screen](https://imgur.com/pRzNZpr)
+![Congratulations FinalScore Screen](https://imgur.com/pRzNZpr.gif)
 ##### Perfect Score
-![Perfect Score FinalScore Screen](https://imgur.com/CfWkGjS)
+![Perfect Score FinalScore Screen](https://imgur.com/CfWkGjS.gif)
 
 ## Technologies Used
  - [Vite](https://vitejs.dev/): A build tool that offers fast development and optimized production builds for modern web applications.
