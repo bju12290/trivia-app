@@ -41,7 +41,7 @@ export default function Question() {
             const newAnswersArray = [...incorrectAnswers, correctAnswer]
             shuffle(newAnswersArray)
             setAnswersArray(newAnswersArray)
-            // console.log(correctAnswer) - Uncomment to cheat ;)
+            // console.log(correctAnswer) // - Uncomment to cheat ;)
         }
     }, [questionNum, triviaData]);
 

@@ -68,9 +68,20 @@ a {
     margin-top: 15vh;
     border-radius: 25px;
     box-shadow: 0px 5px 5px var(--box-shadow-color);
-    font-size: 1.5rem;
 }
 
-.final-score-header {
-    font-size: 2.5rem;
-}
+
+
+@media only screen and (max-width: 576px) {
+
+    .final-score-container {
+        margin-top: 5vh;
+        width: 75vw;
+        height: 50vh;
+    }
+
+    .final-score-header {
+        font-weight: bold;
+        font-size: 1.75rem;
+    }
+  }

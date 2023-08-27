@@ -15,3 +15,18 @@
     margin-top: 8vh;
     text-align: center;
 }
+
+
+@media only screen and (max-width: 576px) {
+
+    .question--container {
+        margin-top: 5vh;
+        width: 75vw;
+        height: 50vh;
+    }
+    .question {
+        width: 75%;
+        margin-top: 4vh;
+        text-align: center;
+    }
+  }
