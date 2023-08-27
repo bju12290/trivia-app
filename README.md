@@ -2,6 +2,8 @@
 
 ## Usage
 
+You can play with the application yourself at [this link](https://bju12290.github.io/trivia-app/).
+
 On the home screen you'll be introduced to a brief description of the project. You can press the "Start" button to begin a game, and questions will begin to be served to you. After you answer 5 questions, your score will be shown back to you, and you'll be presented with the opportunity to play again.
 
 You can use the switch in the top right corner to toggle between Dark Mode and Light Mode.
@@ -9,6 +11,21 @@ You can use the switch in the top right corner to toggle between Dark Mode and L
 If you want to restart, at any time you can click the logo in the Navigation Bar and you'll be taken back to the homepage.
 
 ## Visuals
+
+#### Dark Mode/Light Mode Toggle
+![DarkMode/LightMode Toggle](https://imgur.com/hEDudVE)
+#### A Typical Playthrough
+![Playthrough](https://imgur.com/bCLGbGs)
+#### Possible Final Score Screens
+
+##### Score of 0
+![Better Luck Next Time FinalScore Screen](url_to_your_gif.gif)
+##### Score of less than 3
+![Not Bad FinalScore Screen](https://imgur.com/wY0MVOk)
+##### Score of 3 or more
+![Congratulations FinalScore Screen](https://imgur.com/pRzNZpr)
+##### Perfect Score
+![Perfect Score FinalScore Screen](https://imgur.com/CfWkGjS)
 
 ## Technologies Used
  - [Vite](https://vitejs.dev/): A build tool that offers fast development and optimized production builds for modern web applications.
