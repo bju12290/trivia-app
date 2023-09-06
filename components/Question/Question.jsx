@@ -49,7 +49,7 @@ export default function Question() {
         triviaData === null ? <></> : 
         <>
             <div className="question">
-            <h4>{triviaData[questionNum].question}</h4>
+            <div className="h5">{triviaData[questionNum].question}</div>
             
             </div>
             <div className="answers--container form-check">
